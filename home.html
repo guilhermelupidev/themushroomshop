@@ -1,15 +1,74 @@
-<p><meta charset="UTF-8"> <meta name="viewport"
-        content="width=device-width, initial-scale=1.0"></p>
-<style> body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f8f7; margin: 0; padding: 0; } header, footer { background-color: #4cafaa; color: white; padding: 20px; } section { padding: 20px; margin: 10px; } a { color: #4cafaa; text-decoration: none; font-weight: bold; } .button { background-color: #ff8800; color: white; padding: 10px 20px; border-radius: 20px; display: inline-block; margin-top: 10px; } </style>
-<header> <h1>THE MUSHROOM SHOP </h1> </header> <section> <h2>Produtos
-        Naturais de Alta Qualidade !!!</h2> <p>Descubra os benefícios naturais
-        dos nossos produtos derivados de cogumelos. Experimente o bem-estar com
-        Lion's Mane e outras variedades cuidadosamente selecionadas para
-        melhorar sua saúde e disposição diária.</p> </section> <section>
-    <h2>"The Mushroom Shop é meu favorito de longe!"</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mushroom Shop</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: #f0f8f7; color: #222; line-height: 1.6; }
+    header, footer { background-color: #4cafaa; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; display: inline-block; margin-top: 10px; }
+    main { padding: 40px 20px; text-align: center; }
+    .button { background-color: #ff8800; color: white; padding: 12px 24px; border-radius: 24px; text-decoration: none; display: inline-block; margin-top: 20px; }
+
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      max-width: 900px;
+      margin: 30px auto;
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .product-gallery img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form { max-width: 500px; margin: 0 auto; text-align: left; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc; }
+    form button { background-color: #4caf50; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; }
+    a { color: #4cafaa; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>THE MUSHROOM SHOP</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="comprar.html">Comprar Agora</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cogumelos Funcionais para Mente, Corpo e Espírito</h2>
+    <p>Conheça os benefícios da Juba de Leão, Reishi, Chaga, Tremella, Turkey Tail e Cordyceps.</p>
+
+    <div class="product-gallery">
+      <img src="images/cauda-de-peru.png" alt="Turkey Tail">
+      <img src="images/juba-de-leao.png" alt="Juba de Leão">
+      <img src="images/reishi.png" alt="Reishi">
+      <img src="images/cordyceps.png" alt="Cordyceps">
+      <img src="images/chaga.png" alt="Chaga">
+      <img src="images/tremela.png" alt="Tremella">
+      <img src="images/shitake.png" alt="Shitake">
+      <img src="images/champignon.png" alt="Champignon">
+    </div>
+
+    <a class="button" href="comprar.html">Comprar Agora</a>
+
+    <h2 style="margin-top: 50px">"The Mushroom Shop é meu favorito de longe!"</h2>
     <p>⭐⭐⭐⭐⭐<br>"Ótimo atendimento ao cliente e produtos de alta qualidade! Eu adiciono Lion's Mane ao meu café de cogumelos pela manhã para aumentar a imunidade. Já experimentei vários produtos de cogumelos e TMS é meu favorito de longe!"</p>
-    <p>— André Nonine.</p> <a class="button" href="#produtos">IR PARA
-        PROedfwefwefwefDUTOS</a></section> <section> <h2>SEÇÕES</h2> <nav><a
-            href="#compre">COMPRE AGORA</a> | <a href="#guia">GUIA MUSHROOM</a>
-        | <a href="#contato">CONTATO</a></nav></section> <footer> <p>© 2023 The
-        Mushroom Shop Brasil</p> </footer>
+    <p>— André Nonine.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Mushroom Shop - themushroomshop.com.br</p>
+  </footer>
+</body>
+</html>
