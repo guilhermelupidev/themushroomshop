@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/cloudf90/guilhermelupi.com.br
+    - /bin/cp -R themushroomshop $DEPLOYPATH
