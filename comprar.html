@@ -1,11 +1,43 @@
-<!-- Salvar como comprar.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comprar - The Mushroom Shop</title>
-  <link rel="stylesheet" href="index.html">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: #f0f8f7; color: #222; line-height: 1.6; }
+    header, footer { background-color: #4cafaa; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; display: inline-block; margin-top: 10px; }
+    main { padding: 40px 20px; }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: white;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    a { color: #4cafaa; text-decoration: none; font-weight: bold; }
+  </style>
 </head>
 <body>
   <header>
@@ -57,4 +89,3 @@
   </footer>
 </body>
 </html>
-
